@@ -1,0 +1,29 @@
+Welcome to Squawk!
+By Luke Civantos, Max Benegas, and Chris Fenaroli
+
+Our website can be found at www.harvardsquawk.co.
+
+On our homepage, feel free to sign up for an account (although the site only
+accepts Harvard College email adresses!). The page will ask you to confirm your
+email address with a four-digit code sent to your email.
+
+Once logged on, add a post! Write into the text box and hit enter to submit.
+Anything you write is completely anonymous, but the site will be monitored for 
+inappopriate content. Write anything you'd like to share with the Harvard
+community.
+
+You can sort the feed by the time they were posted or the amount of votes they 
+have by using the new and popular buttons. You can log out by clicking the red
+"log out" button below them. The main table displays the time of the post, the
+content, the number of comments, and the number of upvotes with buttons on either
+side. 
+
+You can click the smiley face to upvote, or the sad face to downvote. Clicking
+the number of comments brings you to a comment page which displays all the
+comments for that particular entry. You can upvote and downvote comments as well.
+Clicking the Squawk logo will bring you back to the main page.
+
+If you would like to report something, scroll to the bottom of the page and
+click the "Report Offensive Content" link and send an email to us.
+
+Thanks for using Squawk!

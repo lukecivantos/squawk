@@ -1,0 +1,59 @@
+Squawk
+By Chris Fenaroli, Luke Civantos, and Max Benegas.
+
+Our project uses both PHP and JavaScript. Style is implemented 
+in CSS, with some formatting help from Bootstrap. 
+
+In our header file, we include a logo representing our website's name and purpose.
+"Squawk" comes from "(Harvard) Square Talk," reflected as a platform for Harvard students
+to anonymously communicate with each other. Our login page includes an html form 
+allowing users to sign in with their username and password. The form queries into 
+a MySQL database containing all registered emails and hashed passwords. If a user
+isn't signed up they can click the html link under the sign-in to be redirected 
+to our register page. 
+
+The register page also is an html form, but includes a password confirmation.
+The form only accepts Harvard college emails. Once filled out, it redirects users
+to a confirmation page. The confirmation page sends an email to the user using
+PHP's mail function, and the email includes a random numerical code. Users can 
+enter this code into a form on the confirmation page and if the code entered matches 
+the code sent in the email then the users account is considered confirmed. Without
+confirmation users will be blocked from actually entering the site/viewing or posting.
+When they are confirmed they are given access.
+
+Once logged in we reach our portfolio page through index.php. index.php queries
+to get an associative array of all entries in order by how recent it was posted and prints 
+each of the entries using a foreach loop and iterating through the array. In the 
+portfolio page under the header, we have an html POST form that includes a text 
+box where a user can input a post. When the user fills out the input and clicks
+enter, the form action takes us to index.php where a POST request method results
+in a SQL query that inserts the entry into a SQL database called entries. There
+are two sorting options, giving the user the choice to sort entries by most 
+upvoted and most recent. POPULAR queries in an ORDER BY of the posts score while
+NEW uses the timestamp.
+
+Below the sorting buttons, there is a table that displays all users' entries. 
+User entries are stored in a MySQL database. We use the CS50::query code from 
+Problem Set 7 From left to right, we implemented the design of the table as 
+timestamp (time since entry), entry, link to comments, upvote button, number of 
+points, and downvote button. When the page loads, our file, index.php, will 
+query into our MySQL database and using a foreach loop in php print out each of 
+the values.
+
+The user is given the ability to upvote or downvote each post once and only
+once, adding or subtracting from the post's score by one. For the buttons we used
+javascript. Using Ajax each button calls an upvote or downvote function which then
+uses .get to access the appropriate php page that will make the query creating a 
+new entry in the database "votes" and deleting all post entries from that user for
+that entry. The user may also click on the comments page for each individual post,
+and anonymously add comments in the same format as the layout of posts. They also
+may like or dislike a comment in the same way they can a post. This works
+in a similar way to entries and votes except we had to use the id for each entry
+to ensure that each comments like is unique to the user. 
+
+We stylized the website in a way that we believe gives it a sleek,
+contemporary feel, but is also simplistic and reflects the purpose of keeping the
+page light-hearted and fun.
+
+- Luke, Max, and Chris
+    
